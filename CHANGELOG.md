@@ -9,6 +9,17 @@ Cadence:
 
 Before 1.0.0, MINOR may include breaking changes (per SemVer 0.x.y convention).
 
+## [0.1.1] — Dual-license under MIT OR Apache 2.0
+
+### Changed
+
+- License changed from MIT-only to **MIT OR Apache 2.0** (dual-licensed). Downstream users may pick either license at their option.
+- `LICENSE` removed; canonical license texts now live at `LICENSE-MIT` and `LICENSE-APACHE`.
+- `package.json` SPDX expression updated to `(MIT OR Apache-2.0)`.
+- README License section updated.
+
+Both MIT and Apache 2.0 are permissive licenses. Companies whose legal teams require explicit patent grants prefer Apache 2.0. Code already redistributed under MIT-only (v0.1.0) retains those rights — this is an additive change, not a license downgrade.
+
 ## [0.1.0] — Initial template release
 
 First public release. All personal/specific data stripped. Folder examples use placeholder slugs `site-a`, `site-b`, `site-c`.

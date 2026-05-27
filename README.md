@@ -138,7 +138,11 @@ If you disagree with any of these, fork it and change them — they're explicit 
 
 ## License
 
-MIT. See `LICENSE`.
+Dual-licensed under **MIT** ([`LICENSE-MIT`](LICENSE-MIT)) **OR** **Apache 2.0** ([`LICENSE-APACHE`](LICENSE-APACHE)) at your option.
+
+Pick whichever license fits your project. Most users will reach for MIT (shorter, more familiar). Companies whose legal teams require explicit patent grants typically prefer Apache 2.0. Both are permissive, both allow commercial use, both require keeping the relevant license file in any redistribution.
+
+This is the same dual-license pattern used by the Rust standard library and most of the Rust ecosystem.
 
 ---
 

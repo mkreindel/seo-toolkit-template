@@ -1,9 +1,9 @@
 {
   "name": "seo-toolkit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "Claude Code workspace template for running consistent SEO across a portfolio of managed websites.",
-  "license": "MIT",
+  "license": "(MIT OR Apache-2.0)",
   "type": "module",
   "scripts": {
     "fetch-images": "node scripts/fetch-images.mjs",
