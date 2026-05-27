@@ -1,0 +1,10 @@
+cell_id,axis_1_value,axis_2_value,primary_keyword,local_data_file,hero_image,volume,peak_months,status
+tapas-houston,Tapas Catering,Houston,tapas catering houston,_local-data/tapas-houston.md,/images/tapas-houston-hero.jpg,260,year-round,draft
+tapas-katy,Tapas Catering,Katy,tapas catering katy,_local-data/tapas-katy.md,/images/tapas-katy-hero.jpg,50,year-round,draft
+tapas-sugar-land,Tapas Catering,Sugar Land,tapas catering sugar land,_local-data/tapas-sugar-land.md,/images/tapas-sugar-land-hero.jpg,40,year-round,draft
+paella-houston,Paella Catering,Houston,paella catering houston,_local-data/paella-houston.md,/images/paella-houston-hero.jpg,210,year-round,draft
+paella-katy,Paella Catering,Katy,paella catering katy,_local-data/paella-katy.md,/images/paella-katy-hero.jpg,30,year-round,draft
+paella-the-woodlands,Paella Catering,The Woodlands,paella catering the woodlands,_local-data/paella-the-woodlands.md,/images/paella-woodlands-hero.jpg,30,year-round,draft
+wedding-houston,Spanish Wedding Catering,Houston,spanish wedding catering houston,_local-data/wedding-houston.md,/images/wedding-houston-hero.jpg,40,"Mar,Apr,May,Sep,Oct",draft
+corporate-houston,Spanish Corporate Catering,Houston,spanish corporate catering houston,_local-data/corporate-houston.md,/images/corporate-houston-hero.jpg,60,year-round,draft
+holiday-houston,Spanish Holiday Catering,Houston,spanish holiday catering houston,_local-data/holiday-houston.md,/images/holiday-houston-hero.jpg,30,"Nov,Dec",draft

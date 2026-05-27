@@ -1,0 +1,93 @@
+# Secrets — NEVER commit
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+.env.test
+
+# Certificates + keys (P4.4)
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+
+# Credential stores + cloud configs (P4.4)
+secrets/
+.aws/
+.gcloud/
+.azure/
+.kube/
+
+# Password manager files (P4.4)
+*.kdbx
+*.kdb
+*.psafe3
+
+# Terraform + IaC state (P4.4)
+terraform.tfvars
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# SSH + signing keys (P4.4)
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+known_hosts
+authorized_keys
+*.gpg
+
+# Dependencies
+node_modules/
+# package-lock.json IS committed — required for reproducible CI builds (npm ci)
+# and for actions/setup-node cache: 'npm' (P5.5 GitHub Actions workflow).
+
+# Drafts (working files, not for the public repo)
+sites/*/_drafts/
+sites/*/_drafts/**
+
+# Research bundles (raw transcripts, exports, voice-source dumps — not for git)
+sites/*/_research/
+sites/*/_research/**
+
+# Triage history (optional — uncomment to keep out of git)
+# triage-*.md
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+npm-debug.log*
+
+# Lighthouse output
+lighthouse-reports/
+*.lighthouse.json
+
+# Image cache
+.image-cache/
+
+# Build artifacts (none expected, but defensive)
+dist/
+build/
+out/
+.secrets/
+client_secret_*.json
+service-account*.json
+*credentials*.json
+*-keyfile.json
+*token*.json

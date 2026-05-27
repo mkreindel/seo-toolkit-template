@@ -1,0 +1,29 @@
+{
+  "name": "seo-toolkit",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Claude Code workspace template for running consistent SEO across a portfolio of managed websites.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "fetch-images": "node scripts/fetch-images.mjs",
+    "validate-schema": "node scripts/validate-schema.mjs",
+    "validate-hreflang": "node scripts/validate-hreflang.mjs",
+    "lighthouse": "node scripts/lighthouse.mjs",
+    "test-api-auth": "node scripts/test-api-auth.mjs",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@google-analytics/data": "^6.0.0",
+    "dotenv": "^16.6.1",
+    "googleapis": "^171.4.0",
+    "js-yaml": "^4.1.1",
+    "xml2js": "^0.6.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "vitest": "^4.1.6"
+  }
+}

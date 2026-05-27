@@ -1,0 +1,3 @@
+# runs.jsonl is append-only (one JSON object per line) — union concatenates safely.
+# failures.json is a single JSON object — union would break syntax; rely on manual resolution.
+_audit-log/runs.jsonl merge=union
