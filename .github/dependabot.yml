@@ -1,0 +1,47 @@
+# Dependabot version-update config
+# Docs: https://docs.github.com/code-security/dependabot/dependabot-version-updates
+#
+# This file enables WEEKLY pull requests to update dependencies.
+# Security updates (CVE-driven) are separate and configured in
+# Settings -> Code security -> Dependabot security updates.
+
+version: 2
+
+updates:
+  # npm dependencies in package.json
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Etc/UTC"
+    open-pull-requests-limit: 5
+    groups:
+      # Group all minor + patch updates into one PR per package manager.
+      # Reduces PR noise; one weekly review instead of N separate PRs.
+      minor-and-patch:
+        update-types:
+          - "minor"
+          - "patch"
+    commit-message:
+      prefix: "deps"
+      include: "scope"
+    labels:
+      - "dependencies"
+
+  # GitHub Actions used in .github/workflows/
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Etc/UTC"
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: "ci"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "github-actions"

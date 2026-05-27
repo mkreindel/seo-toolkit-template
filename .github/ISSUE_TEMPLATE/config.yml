@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: README + quick start
+    url: https://github.com/mkreindel/seo-toolkit-template/blob/main/README.md
+    about: How to install, configure, and use the toolkit. Read this first before filing an issue.
+  - name: SEO_GUIDE.md (canonical playbook)
+    url: https://github.com/mkreindel/seo-toolkit-template/blob/main/SEO_GUIDE.md
+    about: The methodology behind the skills. Questions about "why does the toolkit do X this way?" are usually answered here.
+  - name: WORKFLOWS.md (platform-specific patterns)
+    url: https://github.com/mkreindel/seo-toolkit-template/blob/main/WORKFLOWS.md
+    about: Lovable, GSC, Vercel, Chrome MCP, API credentials — the cross-cutting operational knowledge.
+  - name: Report a security vulnerability
+    url: https://github.com/mkreindel/seo-toolkit-template/security/advisories/new
+    about: For security issues, please use private vulnerability reporting instead of a public issue.

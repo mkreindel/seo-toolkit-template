@@ -9,6 +9,21 @@ Cadence:
 
 Before 1.0.0, MINOR may include breaking changes (per SemVer 0.x.y convention).
 
+## [0.1.2] — Repo hygiene + community files
+
+### Added
+
+- `SECURITY.md` — responsible-disclosure policy pointing to GitHub's private vulnerability reporting form.
+- `CONTRIBUTING.md` — clarifies the fork-vs-contribute distinction. Most users fork and customize; methodology improvements via PR are welcome.
+- `CODE_OF_CONDUCT.md` — Contributor Covenant v2.1 (canonical text).
+- `.github/ISSUE_TEMPLATE/bug_report.md` + `feature_request.md` + `config.yml` — structured issue forms, with contact links to the canonical docs.
+- `.github/workflows/test.yml` — GitHub Actions CI workflow running `npm test` (vitest) on push to `main` + PRs, on Node 20 and 22. Uses least-privilege token scope and concurrency-cancellation.
+- `.github/dependabot.yml` — weekly version-update PRs for npm + GitHub Actions. Groups minor + patch updates into one PR per ecosystem to reduce noise.
+
+### Changed
+
+- (none — purely additive)
+
 ## [0.1.1] — Dual-license under MIT OR Apache 2.0
 
 ### Changed
