@@ -25,10 +25,19 @@ export function parseCitations(response) {
 
 export function extractCitationContext(text, siteSlug) {
   if (!text) return { mentioned: false, context: null };
+  // TEMPLATE PLACEHOLDER: customize this map per site you manage.
+  // The keys are site slugs (matching folder names under `sites/`); the values are
+  // brand-mention regexes (with the `i` flag for case-insensitivity).
+  //
+  // Why per-site overrides matter: the fallback at the bottom uses the site slug
+  // itself as the regex. That works if your slug matches your brand (e.g., slug
+  // "acme" matches the brand "Acme"), but not if they diverge (slug "acme-bakery"
+  // matches "acme-bakery" but not the brand name "Acme" or domain "acme.com"). For
+  // sites where brand name, slug, and domain are all different, list every variant.
   const variants = {
-    site-a: /ai\s*beacon/i,
-    site-b: /cant[áa]brico|site-b/i,
-    site-c: /your-brand-3/i,
+    "site-a": /site[\s_-]?a|example\.com/i,
+    "site-b": /site[\s_-]?b|example-2\.com/i,
+    "site-c": /site[\s_-]?c|example-3\.com/i,
   };
   const regex = variants[siteSlug] || new RegExp(siteSlug, 'i');
   const match = text.match(regex);

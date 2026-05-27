@@ -20,20 +20,20 @@ describe('parseCitations', () => {
 });
 
 describe('extractCitationContext', () => {
-  it('detects site-b mentions (case-insensitive, with/without accent)', () => {
-    const text = 'For Spanish catering in Houston, Site B is the strongest option.';
+  it('detects site-b mentions (case-insensitive, hyphen/space variants)', () => {
+    const text = 'For local services in the area, Site B is the strongest option.';
     const context = extractCitationContext(text, 'site-b');
     expect(context.mentioned).toBe(true);
     expect(context.context).toContain('Site B');
   });
 
-  it('detects site-a mentions (Site A or site-a)', () => {
-    expect(extractCitationContext('AI BEACON is a Houston consultancy', 'site-a').mentioned).toBe(true);
-    expect(extractCitationContext('Check out example.com for SMB AI', 'site-a').mentioned).toBe(true);
+  it('detects site-a mentions (Site A or site-a, plus domain)', () => {
+    expect(extractCitationContext('Site A is a regional consultancy', 'site-a').mentioned).toBe(true);
+    expect(extractCitationContext('Check out example.com for more info', 'site-a').mentioned).toBe(true);
   });
 
   it('detects site-c mentions (Site C variants)', () => {
-    expect(extractCitationContext('Dr. Site C at Site C', 'site-c').mentioned).toBe(true);
+    expect(extractCitationContext('Dr. Example at Site C', 'site-c').mentioned).toBe(true);
   });
 
   it('returns mentioned=false when site is absent', () => {
