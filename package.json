@@ -17,13 +17,13 @@
     "@google-analytics/data": "^6.0.0",
     "dotenv": "^16.6.1",
     "googleapis": "^171.4.0",
-    "js-yaml": "^4.1.1",
+    "js-yaml": "^4.2.0",
     "xml2js": "^0.6.2"
   },
   "engines": {
     "node": ">=20.0.0"
   },
   "devDependencies": {
-    "vitest": "^4.1.6"
+    "vitest": "^4.1.8"
   }
 }
