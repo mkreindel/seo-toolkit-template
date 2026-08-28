@@ -19,7 +19,7 @@
  * Plan 1 ships parser + diff + pause + dry-run. Plan 2 Phase C step 15
  * wires this to the actual /schedule CLI.
  */
-import yaml from 'js-yaml';
+import * as yaml from 'js-yaml';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
